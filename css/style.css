@@ -1,0 +1,185 @@
+/* Import CDN */
+@import url('https://fonts.cdnfonts.com/css/necktie-black');
+
+
+/*
+ * Reset CSS
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+ * Custom CSS
+*/
+
+body {
+  font-family: 'Necktie Black', sans-serif;
+  background-color: #142F43;
+
+}
+
+main {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.__retroImage {
+  width: 100%;
+  height: 100%;
+  max-width: 200px;
+  max-height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.__retroBox {
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  max-height: 800px;
+  /* Gradient Background */
+  background: #FABC60;
+  border: 3px solid #3E001F;
+  border-radius: 3px;
+  -webkit-box-shadow: 14px 14px 0px -3px rgba(62,0,31,1);
+  -moz-box-shadow: 14px 14px 0px -3px rgba(62,0,31,1);
+  box-shadow: 14px 14px 0px -3px rgba(62,0,31,1);
+}
+
+
+.__formHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  border-bottom: 5px solid #3E001F;
+  padding: 8px;
+}
+
+.__retroTitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: #142F43;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.4);
+}
+
+.__formBody {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.__formIconClose {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.__retroFormGroup {
+  width: 100%;
+  flex-direction: column;
+}
+
+.__retroFormFields {
+  width: 100%;
+  padding: 10px;
+  background-color: #FFE5AD;
+  color: #3E001F;
+  font-weight: bold;
+  border: 2px solid #3E001F;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.__retroFormFields:focus {
+  outline: none;
+  border: 2px solid #3E001F;
+}
+
+
+.__retroFormButton {
+  font-size: 25px;
+  width: 100%;
+  padding: 5px;
+  margin: 10px 0px;
+  background-color: #FFE5AD;
+  color: #3E001F;
+  font-weight: bold;
+  border: 2px solid #3E001F;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 3px;
+}
+
+.__retroFormButton:hover {
+  background-color: #3E001F;
+  color: #FFE5AD;
+}
+
+.__retroFormLabel {
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #142F43;
+  letter-spacing: 3px;
+}
+
+.__retroForgotPassword {
+
+  font-weight: bold;
+  margin: 20px 0px;
+  color: #3E001F;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.__retroFormLink {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  letter-spacing: 3px;
+  color: #FFAB4C;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  margin: 20px 0px;
+}
+
+.__retroFormLink:hover {
+  color: #3E001F;
+}
+
+.__footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.__footerText {
+  font-size: 12px;
+  font-weight: bold;
+  color: #FFAB4C;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.4);
+}
+
+@media screen and (max-width: 768px) {
+  .__retroBox {
+    max-width: 400px;
+    max-height: 600px;
+  }
+}
